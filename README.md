@@ -19,7 +19,6 @@
 
 ```bash
 uv venv
-uv pip install -e .
 ```
 
 2. 開発用パッケージのインストール:
@@ -86,7 +85,6 @@ LLMはこのテンプレートを参照し、ユーザーから提供された�
 ├── .gitignore          # Git無視ファイル設定
 ├── LICENSE             # ライセンスファイル
 ├── README.md           # このファイル
-├── pyproject.toml      # Pythonパッケージ設定
 └── requirements.txt    # 依存関係
 ```
 
