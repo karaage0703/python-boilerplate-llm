@@ -7,7 +7,6 @@
 - LLMによる設計書自動生成と実装の一貫したワークフロー
 - 設計書テンプレート（docs/design.md.sample）をベースにLLMが要件に合わせた設計書を作成
 - uvを使用した仮想環境管理
-- setuptoolsを使用したシンプルなパッケージング
 - src/とtests/ディレクトリによる構造化
 - メインプログラムのエントリーポイント
 - pytestを使用したテスト例
@@ -87,8 +86,7 @@ LLMはこのテンプレートを参照し、ユーザーから提供された�
 ├── .gitignore          # Git無視ファイル設定
 ├── LICENSE             # ライセンスファイル
 ├── README.md           # このファイル
-├── requirements.txt    # 依存関係
-└── setup.py            # パッケージ設定
+└── requirements.txt    # 依存関係
 ```
 
 ## ライセンス
