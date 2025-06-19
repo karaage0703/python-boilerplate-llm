@@ -15,6 +15,18 @@
 
 ### 開発環境のセットアップ
 
+#### 方法1: DevContainer（推奨）
+
+VS Codeユーザーの場合、DevContainerを使用した開発環境が利用可能です：
+
+1. VS CodeでDevContainerを開く:
+   - `F1` → `Dev Containers: Reopen in Container`
+   - または通知からコンテナで再開を選択
+
+2. 自動的にDocker環境がセットアップされ、Pythonの開発環境が構築されます
+
+#### 方法2: ローカル環境
+
 1. uvによる仮想環境の作成とパッケージのインストール:
 
 ```bash
@@ -84,7 +96,13 @@ LLMはこのテンプレートを参照し、ユーザーから提供された�
 ├── tests/              # テストコード
 │   ├── conftest.py
 │   └── test_main.py    # メインモジュールのテスト
-├── .clinerules         # Cline設定ファイル
+├── .devcontainer/      # DevContainer設定ファイル
+│   ├── devcontainer.json
+│   ├── docker-compose.yml
+│   └── Dockerfile
+├── .claude/            # Claude Code設定
+│   └── settings.local.json
+├── rules.md            # コーディングルール
 ├── .gitignore          # Git無視ファイル設定
 ├── LICENSE             # ライセンスファイル
 ├── README.md           # このファイル
