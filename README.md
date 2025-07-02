@@ -47,7 +47,7 @@ python -m src.main
 
 ### LLMを活用した開発ワークフロー
 
-このボイラープレートは、LLM（Cline/Cursor等）を活用した以下の開発ワークフローを前提としています：
+このボイラープレートは、AIコーディングツール（Cline/Cursor/Claude Code等）を活用した以下の開発ワークフローを前提としています：
 
 1. プロジェクトの要件をLLMに伝える
 2. LLMが`docs/design.md.sample`テンプレートをベースに、要件に合わせた`docs/design.md`を自動生成
