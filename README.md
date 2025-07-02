@@ -15,17 +15,7 @@
 
 ### 開発環境のセットアップ
 
-#### 方法1: DevContainer（推奨）
-
-VS Codeユーザーの場合、DevContainerを使用した開発環境が利用可能です：
-
-1. VS CodeでDevContainerを開く:
-   - `F1` → `Dev Containers: Reopen in Container`
-   - または通知からコンテナで再開を選択
-
-2. 自動的にDocker環境がセットアップされ、Pythonの開発環境が構築されます
-
-#### 方法2: ローカル環境
+#### 方法1: ローカル環境
 
 1. uvによる仮想環境の作成とパッケージのインストール:
 
@@ -38,6 +28,16 @@ uv venv
 ```bash
 uv pip install -r requirements.txt
 ```
+
+#### 方法2: DevContainer
+
+VS Codeユーザーの場合、DevContainerを使用した開発環境が利用可能です：
+
+1. VS CodeでDevContainerを開く:
+   - `F1` → `Dev Containers: Reopen in Container`
+   - または通知からコンテナで再開を選択
+
+2. 自動的にDocker環境がセットアップされ、Pythonの開発環境が構築されます
 
 ### メインプログラムの実行
 

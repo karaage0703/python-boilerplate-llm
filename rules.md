@@ -48,9 +48,16 @@
 - PEP8に従ったコードを書いてください
 - ruffのフォーマッタでファイルの保存と同時に自動整形するので、フォーマットの修正は不要です
 - GoogleスタイルのDocstringを書いてください
-- ユーザーから指示があった場合は、`.github/workflows/ruff.yml`の設定に従ったLintチェックを実行してください：
-  - ruff checkコマンドによるコードチェック
-  - ruff formatコマンドによるフォーマットチェック
+- **重要**: 必ず`.github/workflows/ruff.yml`の設定に従ってLintを実行してください
+
+```bash
+# Python - GitHub Actions設定に従った正しいコマンド
+ruff check --line-length=127
+ruff format --check --diff --line-length=127
+
+# フォーマット適用
+ruff format --line-length=127
+```
 
 ### テストコード
 
